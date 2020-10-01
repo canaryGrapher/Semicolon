@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'ghostclan';
+  src: url('../Resources/Fonts/ghostclan.ttf') format('truetype');
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* resetting browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ghostclan;
+  background-color: #12005e;
+  overflow-x: hidden;
+}
+
+.container-first {
+  background-image: url('../Resources/Images/apocalypse.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+}
+
+.img-parallax {
+  bottom: 0;
+}
+
+.landing-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  padding-left: 10vh;
+  color: #ffffff;
+}
+
+.landing-slogan > h1 {
+  font-size: 9rem;
+}
+
+.landing-slogan > p {
+  font-size: 2rem;
+}

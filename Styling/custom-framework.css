@@ -1,0 +1,26 @@
+/* This framework is not imported from the internet. It was made during the competition, for the competition */
+.h-full {
+      height: 100%;
+}
+.h-half {
+      height: 50%;
+}
+.w-full {
+      width: 100%;
+}
+.w-half {
+      width: 50%;
+}
+
+/* defining displays */
+.d-flex {
+      display: flex;
+}
+/* definign positions */
+.position-fixed {
+       position: fixed;
+}
+
+.position-absolute {
+       position: absolute;
+}
