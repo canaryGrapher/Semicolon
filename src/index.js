@@ -1,4 +1,5 @@
 import { Navbar } from './components/Navbar.js';
+import { Footer } from './components/Footer.js';
 
 const render = (template, node) => {
   if (!node) return;
@@ -19,6 +20,7 @@ class App extends HTMLElement {
   connectedCallback() {
     console.log('connected');
     render(Navbar, document.querySelector('#navbar-container'));
+    render(Footer, document.querySelector('#footer'));
     // browser calls this method when the element is added to the document
     // (can be called many times if an element is repeatedly added/removed)
   }

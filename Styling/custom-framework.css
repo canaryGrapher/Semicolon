@@ -168,3 +168,10 @@ img.row-img {
 .ml-5 {
   margin-left: 5rem;
 }
+
+
+/* designing components */
+.row > h1, .row > h2 {
+  width: 80%;
+  margin-left: 6vh;
+}
