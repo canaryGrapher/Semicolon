@@ -1,0 +1,14 @@
+.footer {
+      position: relative;
+      width: 100%;
+      min-height: 30vh;
+      background-color: #202020;
+}
+
+.contribution {
+      position: absolute;
+      bottom: 0;
+      padding-left: 3.6vw;
+      background-color: #444444;
+      width: 100%;
+}

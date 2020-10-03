@@ -1,0 +1,15 @@
+#section-home-landing {
+      height: 100vh;
+      width: 96.4vw;
+      background-image: url('../Resources/Images/bg-image.png');   
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+
+.text-over {
+      height: 100vh;
+      padding-left: 4vw;
+}
+
