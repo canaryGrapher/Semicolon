@@ -6,9 +6,31 @@
 }
 
 .contribution {
-      position: absolute;
-      bottom: 0;
-      padding-left: 3.6vw;
       background-color: #444444;
       width: 100%;
+      padding: 10px 0;
+      color:#BCBCBC;
+}
+
+.col {
+      width: 50%;
+}
+
+.footer .subtext-root {
+      font-size: 1.5rem;
+}
+
+.footer-links > h2 {
+      color: #ffffff;
+}
+
+.footer-links > h3 {
+      color: #0087FF;
+      margin: 5px 0;
+}
+
+.footer-links > h3:hover {
+      color: #658bac;
+      cursor: pointer;
+      
 }

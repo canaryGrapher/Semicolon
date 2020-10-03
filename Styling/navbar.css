@@ -1,0 +1,31 @@
+.navbar {
+  color: #fff;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  width: 96.4vw;
+  height: 8vh;
+  line-height: 8vh;
+}
+
+.logo-text {
+  padding-left: 2vw;
+}
+
+.ham-menu-container {
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+  height: 8vh;
+}
+
+.ham-menu {
+  height: fit-content;
+  position: relative;
+  margin-top: 2vh;
+}
+
+.layer {
+  width: 30px;
+  height: 4.5px;
+  background-color: #fff;
+  margin: 5px auto;
+}

@@ -82,6 +82,10 @@ img.row-img {
   font-size: 2rem;
 }
 
+.text-color-root {
+  color: #aa2af2;
+}
+
 .heading-root {
   font-size: 5.5rem;
   color: #ffffff;
@@ -112,6 +116,7 @@ img.row-img {
 .btn:hover {
   background-color: #ffffff;
   color: #aa2af2;
+  cursor: pointer;
 }
 
 

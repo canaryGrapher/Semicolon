@@ -1,0 +1,28 @@
+#sidebar {
+  height: 100vh;
+  width: 3.6vw;
+  background-color: #202020;
+  position: fixed;
+}
+
+.fas {
+  font-size: 1.7vw;
+  color: #ffffff;
+  margin: 25px auto;
+}
+
+.fas:hover {
+  filter: drop-shadow(2px 2px 10px #AA2AF2);
+  cursor: pointer;
+}
+
+.active {
+  color: #AA2AF2;
+}
+
+img.logo {
+  position: absolute;
+  top: 0;
+  margin: 2vh 0.5vw;
+  width: 2.6vw;
+}
