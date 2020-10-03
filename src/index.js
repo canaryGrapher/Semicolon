@@ -15,7 +15,9 @@ const render = (template, node) => {
 class App extends HTMLElement {
   constructor() {
     super();
-    // element created
+    this.state = {
+      currentPage: 'home'
+    };
   }
 
   connectedCallback() {

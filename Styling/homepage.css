@@ -13,3 +13,13 @@
       padding-left: 4vw;
 }
 
+@media only screen and (max-width: 768px) {
+      #section-home-landing {
+            width: 100vw;
+      }
+      .text-over {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+      }
+}

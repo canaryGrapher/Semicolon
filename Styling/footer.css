@@ -1,37 +1,50 @@
 .footer {
-      position: relative;
-      width: 100%;
-      min-height: 30vh;
-      background-color: #202020;
+  position: relative;
+  width: 100%;
+  min-height: 30vh;
+  background-color: #202020;
 }
 
 .contribution {
-      background-color: #444444;
-      width: 100%;
-      padding: 10px 0;
-      color:#BCBCBC;
+  background-color: #444444;
+  width: 100%;
+  padding: 10px 0;
+  color: #bcbcbc;
 }
 
 .col {
-      width: 50%;
+  width: 50%;
 }
 
 .footer .subtext-root {
-      font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .footer-links > h2 {
-      text-align: left;
-      color: #ffffff;
+  text-align: left;
+  color: #ffffff;
 }
 
 .footer-links > h3 {
-      color: #0087FF;
-      margin: 5px 0;
+  color: #0087ff;
+  margin: 5px 0;
 }
 
 .footer-links > h3:hover {
-      color: #658bac;
-      cursor: pointer;
-      
+  color: #658bac;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer > .col {
+        margin: 2vh auto;
+  }
+  .footer-links {
+        text-align: center;
+        background-color: aqua;
+  }
 }

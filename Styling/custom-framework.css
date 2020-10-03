@@ -15,7 +15,7 @@
 /* defining section settings */
 section {
   padding-top: 10vh;
-  background-image: linear-gradient(to bottom, #1C2838, #172a42);
+  background-image: linear-gradient(to bottom, #1c2838, #172a42);
   min-height: 100vh;
 }
 
@@ -24,6 +24,13 @@ section {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.img-row-end {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10vh;
 }
 
 .row-text-holder {
@@ -38,7 +45,6 @@ img.row-img {
   display: block;
   width: 80%;
 }
-
 
 /* defining displays */
 .d-flex {
@@ -119,7 +125,6 @@ img.row-img {
   cursor: pointer;
 }
 
-
 /* defining positioning parameters */
 .ml-auto {
   margin-left: auto;
@@ -169,9 +174,72 @@ img.row-img {
   margin-left: 5rem;
 }
 
-
 /* designing components */
-.row > h1, .row > h2 {
+.row > h1,
+.row > h2 {
   width: 80%;
   margin-left: 6vh;
+}
+
+.card-slider {
+  overflow-x: scroll;
+  max-width: 96.4vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 400px;
+  margin: 10px 1vw;
+}
+
+.card-img {
+  width: 390px;
+  height: 225px;
+  margin: 5px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: #c2c2c2;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-md-column {
+    flex-direction: column;
+  }
+
+  .img-row {
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .img-row:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .row-text-holder {
+    width: 98%;
+    text-align: center;
+    margin: 5px auto;
+  }
+
+  .row-img-holder {
+    width: 100%;
+  }
+  img.row-img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
 }

@@ -1,5 +1,5 @@
 const Footer = () => {
-  const footerTemplate = `<div class="footer d-flex flex-row">
+  const footerTemplate = `<div class="footer d-flex flex-row flex-md-column">
             <div class="col text-center d-flex flex-column justify-content-center">
               <h1 class="heading-root-row">
                 Sem<span class="text-color-root">i</span>colon
