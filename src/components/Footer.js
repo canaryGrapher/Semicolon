@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
           </div>
           <div class="contribution text-center">
-            <p>Copyright © 2020 Semicolon. All rights reserved.</p>
+            <p>©2020 Semicolon. All rights reserved.</p>
           </div>`;
   return footerTemplate;
 };

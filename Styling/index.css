@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   user-select: none;
+  cursor: url('../Resources/Images/cursor/cursor.png'), auto;
 }
 
 body {
@@ -33,5 +34,10 @@ body {
   #content {
     padding-left: 0;
     width: 100vw;
+  }
+
+  #page-content {
+    width: 100vw;
+    overflow-x: hidden;
   }
 }

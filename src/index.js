@@ -1,6 +1,10 @@
 import { Navbar } from './components/Navbar.js';
 import { Footer } from './components/Footer.js';
 import { Sidebar } from './components/Sidebar.js';
+import { Home } from './components/pages/Home.js';
+import { Catalogue } from './components/pages/Catalogue.js';
+import { Checkout } from './components/pages/Checkout.js';
+import { Announcements } from './components/pages/Announcements.js';
 
 const render = (template, node) => {
   if (!node) return;
@@ -16,47 +20,54 @@ class App extends HTMLElement {
   constructor() {
     super();
     this.state = {
-      currentPage: 'home'
+      currentPage: ''
     };
   }
 
-  connectedCallback() {
-    console.log('connected');
+  renderBasicElements() {
     render(Sidebar, document.querySelector('#sidebar'));
     render(Navbar, document.querySelector('#navbar-container'));
     render(Footer, document.querySelector('#footer'));
-    // browser calls this method when the element is added to the document
-    // (can be called many times if an element is repeatedly added/removed)
   }
 
-  disconnectedCallback() {
-    // browser calls this method when the element is removed from the document
-    // (can be called many times if an element is repeatedly added/removed)
-  }
+  connectedCallback() {
+    this.renderBasicElements();
+    if (window.location.hash === '#home' || window.location.hash === '') {
+      this.state.currentPage = 'home';
+    } else if (window.location.hash === '#catalogue') {
+      this.state.currentPage = 'catalogue';
+    } else if (window.location.hash === '#checkout') {
+      this.state.currentPage = 'checkout';
+    } else if (window.location.hash === '#announcements') {
+      this.state.currentPage = 'announcements';
+    }
+    if (this.state.currentPage === 'home') {
+      window.history.pushState({}, 'home', '#home');
+      document.title = 'Semicolon';
+      render(Home, document.querySelector('#page-content'));
+      document.getElementById(`${this.state.currentPage}`).classList.add("active")
+    } else if (this.state.currentPage === 'catalogue') {
+      window.location.hash = '#catalogue';
+      // window.history.pushState({}, null, '#catalogue');
+      document.title = 'Catalogue | Semicolon';
+      render(Catalogue, document.querySelector('#page-content'));
+      document.getElementById(`${this.state.currentPage}`).classList.add("active")
+    } else if (this.state.currentPage === 'announcements') {
+      window.history.pushState({}, 'announcements', '#announcements');
+      document.title = 'Announcements | Semicolon';
+      render(Announcements, document.querySelector('#page-content'));
+      document.getElementById(`${this.state.currentPage}`).classList.add("active")
+    } else if (this.state.currentPage === 'checkout') {
+      window.history.pushState({}, 'checkout', '#checkout');
+      document.title = 'Checkout | Semicolon';
+      render(Checkout, document.querySelector('#page-content'));
+      document.getElementById(`${this.state.currentPage}`).classList.add("active")
+    }
 
-  static get observedAttributes() {
-    return [
-      /* array of attribute names to monitor for changes */
-    ];
+    window.Router = (props) => {
+      window.history.pushState({}, props, `#${props}`);
+      this.connectedCallback();
+    };
   }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    // called when one of attributes listed above is modified
-  }
-
-  adoptedCallback() {
-    // called when the element is moved to a new document
-    // (happens in document.adoptNode, very rarely used)
-  }
-
-  // there can be other element methods and properties
 }
-
-// document.addEventListener(
-//   'elementRendered',
-//   function (event) {
-//     const elem = event.target;
-//   },
-//   false
-// );
 window.customElements.define('nav-bar', App);

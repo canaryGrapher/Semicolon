@@ -27,7 +27,6 @@ section {
 }
 
 .img-row-end {
-  display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 10vh;
@@ -122,7 +121,6 @@ img.row-img {
 .btn:hover {
   background-color: #ffffff;
   color: #aa2af2;
-  cursor: pointer;
 }
 
 /* defining positioning parameters */
@@ -229,7 +227,7 @@ img.row-img {
   }
 
   .row-text-holder {
-    width: 98%;
+    width: 100%;
     text-align: center;
     margin: 5px auto;
   }
@@ -241,5 +239,62 @@ img.row-img {
     display: block;
     width: 95%;
     margin: 0 auto;
+  }
+  .img-row-end {
+    flex-direction: column;
+  }
+  .text-root {
+    font-size: 1.5rem;
+  }
+
+  .heading-root {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .heading-root-row {
+    font-size: 2rem;
+  }
+
+  .subtext-root {
+    font-size: 1.2rem;
+    margin-bottom: 2vh;
+  }
+
+  .row > h1,
+  .row > h2 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .btn {
+    margin: 20px auto;
+  }
+
+  .card-slider {
+    overflow-x: scroll;
+    max-width: 100vw;
+  }
+
+  .card {
+    max-width: 250px;
+    min-width: 250px;
+    margin: 10px 1vw;
+    text-align: center;
+  }
+
+  .card-img {
+    width: 240px;
+    height: 125px;
+    margin: 5px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .row {
+    padding: 12px;
   }
 }

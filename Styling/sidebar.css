@@ -13,7 +13,6 @@
 
 .fas:hover {
   filter: drop-shadow(2px 2px 10px #AA2AF2);
-  cursor: pointer;
 }
 
 .active {

@@ -32,19 +32,37 @@
 
 .footer-links > h3:hover {
   color: #658bac;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
+  .footer .subtext-root {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-links > h2 {
+    text-align: center;
+    font-size: larger;
+  }
+
+  .footer-links > h3 {
+    font-size: large;
+    margin: 0;
+  }
+
+  .col {
+    width: 100%;
+  }
+
   .footer {
     text-align: center;
   }
 
   .footer > .col {
-        margin: 2vh auto;
-  }
-  .footer-links {
-        text-align: center;
-        background-color: aqua;
+    margin: 2vh auto;
   }
 }
