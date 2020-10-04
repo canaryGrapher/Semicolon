@@ -32,6 +32,7 @@ class App extends HTMLElement {
 
   connectedCallback() {
     this.renderBasicElements();
+    console.log(window.location.hash);
     if (window.location.hash === '#home' || window.location.hash === '') {
       // if (window.location.hash === '#home') {
       this.state.currentPage = 'home';
