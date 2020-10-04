@@ -3,48 +3,48 @@ export const virtualData = [
     name: 'Quake',
     cost: '0.9',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://img.cinemablend.com/filter:scale/cb/d/2/0/1/1/4/d201145708819b3bbcdad34576b226049a8fd39c00de9b105ddc668d24ceba34.jpg?mw=600',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'It is a virtual reality first-person shooter developed and published by Valve. Between the events of Half-Life and Half-Life 2, players control Alyx Vance on a mission to seize a superweapon belonging to the alien'
   },
   {
-    name: 'fasfcg',
+    name: 'Beat',
     cost: '1.9',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://www.roadtovr.com/wp-content/uploads/2018/05/ragesaq-vr-beat-saber.jpg',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'The game takes place in a surrealistic neon noir environment and features the player slicing blocks representing musical beats with a pair of contrasting colored sabers'
   },
   {
-    name: 'SdsGzsdg',
-    cost: '0.9',
+    name: 'Arizona Alyx',
+    cost: '1.2',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://www.mercurynews.com/wp-content/uploads/2016/08/20150204_123429_CCT-VIDGAME-0206-01.jpg',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'Arizona Alyx is a zombie survival first-person shooter video game released on December 6, 2016.'
   },
   {
-    name: 'sdzgfdhgag',
-    cost: '0.9',
+    name: 'Valkyrie',
+    cost: '2.5',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://cdn.wccftech.com/wp-content/uploads/2017/09/eve_valkyrie_warzone_art.jpg',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'Valkyrie is a multiplayer dogfighting shooter game set in the Eve Online universe that is designed to use virtual reality headset technology.'
   },
   {
-    name: 'gaszsgvs',
-    cost: '0.9',
+    name: "Skyfall: No Man's Planet",
+    cost: '1.3',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://zombiesinmyblog.com/wp-content/uploads/2016/03/Star-Wars-Universe-Poster.jpg',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'A virtual reality game where the earth is in danger and its residents need to find a new planet'
   },
   {
-    name: 'vsrszdgdg',
+    name: 'The Odyssey Danger',
     cost: '0.9',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://cms.elitedangerous.com/frontier_image_styles/style?url=/sites/default/files/2018-11/horizons-key-art_0.jpg&width=1920&height=1080&type=binary',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'The Odyssey Danger is a space flight simulation game developed and published by Frontier Developments. Piloting a spaceship, the player explores a realistic 1:1 scale open-world representation of the Milky Way galaxy, with the gameplay being open-ended.'
   }
 ];
