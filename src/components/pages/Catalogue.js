@@ -16,7 +16,9 @@ const Catalogue = () => {
         </p>
       </div>
       <div class="game-card-footer d-flex flex-row hyperreality-card">
-        <div class="add-to-cart" id="${item.name}" onClick="addtocart(this.id)">
+        <div class="add-to-cart" id="${
+          item.name.split(' ')[0]
+        }" onClick="addtocart(this.id)">
           <h3 class="cart-image">Add to Cart</h3>
         </div>
         <div class="item-cost">
@@ -38,7 +40,9 @@ const Catalogue = () => {
         </p>
       </div>
       <div class="game-card-footer d-flex flex-row augmented-card">
-        <div class="add-to-cart" id="${item.name}" onClick="addtocart(this.id)">
+        <div class="add-to-cart" id="${
+          item.name.split(' ')[0]
+        }" onClick="addtocart(this.id)">
           <h3 class="cart-image">Add to Cart</h3>
         </div>
         <div class="item-cost">
@@ -61,7 +65,9 @@ const Catalogue = () => {
         </p>
       </div>
       <div class="game-card-footer d-flex flex-row virtual-card">
-        <div class="add-to-cart" id="${item.name}" onClick="addtocart(this.id)">
+        <div class="add-to-cart" id="${
+          item.name.split(' ')[0]
+        }" onClick="addtocart(this.id)">
           <h3 class="cart-image">Add to Cart</h3>
         </div>
         <div class="item-cost">

@@ -21,7 +21,8 @@ class App extends HTMLElement {
   constructor() {
     super();
     this.state = {
-      currentPage: ''
+      currentPage: '',
+      data: []
     };
   }
 
@@ -34,10 +35,11 @@ class App extends HTMLElement {
   connectedCallback() {
     this.renderBasicElements();
         if (window.location.hash === '#cart') {
-          for (let i = 1; i < this.state.length; i++) {
-            console.log('this');
-            console.log(this.state[i]);
-          }
+          console.log('this');
+          console.log(this.state.data.length);
+          // const cartItems = this.state.map((item) => {
+          //   console.log(item);
+          // });;
         }
     // if (window.location.hash === '#home' || window.location.hash === '') {
     if (window.location.hash === '#home') {
@@ -71,11 +73,11 @@ class App extends HTMLElement {
       document
         .getElementById(`${this.state.currentPage}`)
         .classList.add('active');
-    } else if (this.state.currentPage === 'checkout') {
+    } else if (this.state.currentPage === 'cart') {
       CartManager;
       window.history.pushState({}, 'cart', '#cart');
       document.title = 'Cart | Semicolon';
-      render(Checkout, document.querySelector('#page-content'));
+      render(Cart, document.querySelector('#page-content'));
       document
         .getElementById(`${this.state.currentPage}`)
         .classList.add('active');
@@ -83,9 +85,10 @@ class App extends HTMLElement {
 
     window.CartManager = CartManager;
     window.addtocart = (props) => {
-      eval(`if(this.state.${props}) {
-        this.state.${props} += 1
-        } else { this.state.${props} = 1 }`);
+      console.log(this.state.data);
+      eval(`if(this.state.data.${props}) {
+        this.state.data.${props} += 1
+        } else { this.state.data.${props} = 1 }`);
     };
 
     window.change = (props) => {
