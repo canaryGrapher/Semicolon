@@ -35,8 +35,7 @@ class App extends HTMLElement {
 
   connectedCallback() {
     this.renderBasicElements();
-    // if (window.location.hash === '#home' || window.location.hash === '') {
-    if (window.location.hash === '#home') {
+    if (window.location.hash === '#home' || window.location.hash === '') {
       this.state.currentPage = 'home';
     } else if (window.location.hash === '#catalogue') {
       this.state.currentPage = 'catalogue';
@@ -54,7 +53,7 @@ class App extends HTMLElement {
         .classList.add('active');
     } else if (this.state.currentPage === 'catalogue') {
       window.location.hash = '#catalogue';
-      // window.history.pushState({}, null, '#catalogue');
+      window.history.pushState({}, null, '#catalogue');
       document.title = 'Catalogue | Semicolon';
       render(Catalogue, document.querySelector('#page-content'));
       document
@@ -118,9 +117,6 @@ class App extends HTMLElement {
                   `Number(gameCatalogue[i].cost)*this.state.data.${item}`
                 );
                 let quantity = eval(`this.state.data.${item}`);
-                console.log(x);
-                // console.log(gameCatalogue[i].cost);
-                // eval(`console.log(this.state.data.${item})`);
                 let cartColumn = `<div class="cart-content d-flex flex-column">
                 <h1 class="cart-heading">${gameCatalogue[i].name}</h1>
                 <div class="w-30">
