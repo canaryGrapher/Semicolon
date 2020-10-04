@@ -101,6 +101,10 @@ class App extends HTMLElement {
       window.history.pushState({}, props, `#${props}`);
       this.connectedCallback();
     };
+
+    for (let i = 1; i < this.state.length; i++) {
+      console.log(this.state[i]);
+    }
   }
 }
 window.customElements.define('nav-bar', App);
