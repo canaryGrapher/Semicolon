@@ -3,7 +3,7 @@ import { Footer } from './components/Footer.js';
 import { Sidebar } from './components/Sidebar.js';
 import { Home } from './components/pages/Home.js';
 import { Catalogue } from './components/pages/Catalogue.js';
-import { Checkout } from './components/pages/Checkout.js';
+import { Cart } from './components/pages/Cart.js';
 import { Search, SearchQuery } from './components/pages/Search.js';
 import { CartManager } from './components/CartManager.js';
 
@@ -16,7 +16,6 @@ const render = (template, node) => {
   node.dispatchEvent(event);
   return node;
 };
-
 
 class App extends HTMLElement {
   constructor() {
@@ -34,13 +33,19 @@ class App extends HTMLElement {
 
   connectedCallback() {
     this.renderBasicElements();
+        if (window.location.hash === '#cart') {
+          for (let i = 1; i < this.state.length; i++) {
+            console.log('this');
+            console.log(this.state[i]);
+          }
+        }
     // if (window.location.hash === '#home' || window.location.hash === '') {
     if (window.location.hash === '#home') {
       this.state.currentPage = 'home';
     } else if (window.location.hash === '#catalogue') {
       this.state.currentPage = 'catalogue';
-    } else if (window.location.hash === '#checkout') {
-      this.state.currentPage = 'checkout';
+    } else if (window.location.hash === '#cart') {
+      this.state.currentPage = 'cart';
     } else if (window.location.hash === '#search') {
       this.state.currentPage = 'search';
     }
@@ -68,8 +73,8 @@ class App extends HTMLElement {
         .classList.add('active');
     } else if (this.state.currentPage === 'checkout') {
       CartManager;
-      window.history.pushState({}, 'checkout', '#checkout');
-      document.title = 'Checkout | Semicolon';
+      window.history.pushState({}, 'cart', '#cart');
+      document.title = 'Cart | Semicolon';
       render(Checkout, document.querySelector('#page-content'));
       document
         .getElementById(`${this.state.currentPage}`)
@@ -78,22 +83,22 @@ class App extends HTMLElement {
 
     window.CartManager = CartManager;
     window.addtocart = (props) => {
-      console.log(props);
       eval(`if(this.state.${props}) {
         this.state.${props} += 1
         } else { this.state.${props} = 1 }`);
-      console.log(this.state);
     };
 
-    window.change = (props)  => {
-      console.log(props)
-      window.history.pushState({}, `${props.toLowerCase()}`, `#${props.toLowerCase()}`);
+    window.change = (props) => {
+      window.history.pushState(
+        {},
+        `${props.toLowerCase()}`,
+        `#${props.toLowerCase()}`
+      );
       document.title = `${props} | Semicolon`;
       this.state.currentPage = `${props.toLowerCase()}`;
-      console.log(this.state);
-      render(props, document.querySelector('#page-content'))
+      render(props, document.querySelector('#page-content'));
       this.connectedCallback();
-      };
+    };
 
     window.SearchQuery = SearchQuery;
 
@@ -101,10 +106,6 @@ class App extends HTMLElement {
       window.history.pushState({}, props, `#${props}`);
       this.connectedCallback();
     };
-
-    for (let i = 1; i < this.state.length; i++) {
-      console.log(this.state[i]);
-    }
   }
 }
 window.customElements.define('nav-bar', App);

@@ -1,5 +1,5 @@
-const Checkout = () => {
-  const checkoutTemplate = `          <div class="content-cart">
+const Cart = () => {
+  const checkoutTemplate = `<div class="content-cart">
             <h1 class="heading-root cart-heading-super">Cart</h1>
             <div id="container-cart" class="d-grid">
 
@@ -17,4 +17,4 @@ const Checkout = () => {
   return checkoutTemplate;
 };
 
-export { Checkout };
+export { Cart };
