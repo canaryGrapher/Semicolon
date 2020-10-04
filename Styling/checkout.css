@@ -1,0 +1,147 @@
+.content-cart {
+  width: 96.4vw;
+  min-height: 100vh;
+  position: relative;
+  right: 0;
+  color: #fff;
+}
+
+.cart-heading {
+  padding: 2vh 0 0 2vw;
+}
+
+.cart-content {
+  width: 400px;
+  min-height: 5vh;
+  background-color: rgba(19, 19, 19, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10vh auto;
+}
+
+.print-button-holder {
+  text-align: center;
+}
+
+.w-30 {
+  width: 100%;
+}
+
+.w-30 > img {
+  width: 100%;
+}
+
+.w-40 {
+  width: 100%;
+}
+
+.cost {
+  font-size: 1.8rem;
+}
+
+#container-cart {
+      grid-template-columns: auto auto auto;
+}
+
+.total {
+      padding: 2vh;
+}
+
+.w-40 > h3 {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.w-40 > table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.6rem;
+}
+
+.quantity {
+  margin: 10px auto;
+}
+
+.value-button {
+  margin: 50px auto;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #aa2af2;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+} */
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cart-heading-super {
+      margin: 10vh 0 1vh 5vw;
+}
+
+.cart-heading {
+      font-size: 4rem;
+      margin: 0;
+}
+
+.total-cost-purchase {
+      color: azure;
+      font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-cart {
+    width: 100vw;
+    min-height: 100vh;
+  }
+  .w-30,
+  .w-40 {
+    width: 100%;
+  }
+  #container-cart {
+      grid-template-columns: auto;
+}
+}
+

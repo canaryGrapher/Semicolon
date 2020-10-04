@@ -20,10 +20,13 @@ Receipt generation that clearly mentions the total cost. -->
     <link rel="stylesheet" href="./Styling/homepage.css" />
     <link rel="stylesheet" href="./Styling/catalogue.css" />
     <link rel="stylesheet" href="./Styling/search.css" />
+    <link rel="stylesheet" href="./Styling/checkout.css" />
+    <link rel="stylesheet" href="./Styling/ResNavbar.css" />
     <link rel="stylesheet" href="./Styling/footer.css" />
     <title></title>
   </head>
-  <body onload="Router('home')">
+  <!-- <body onload="Router('home')"> -->
+  <body>
     <noscript>You need Javascript to run this application</noscript>
     <div id="root" class="d-flex flex-row">
       <div
@@ -34,11 +37,29 @@ Receipt generation that clearly mentions the total cost. -->
         <div id="navbar-container">
           <nav-bar />
         </div>
-        <div id="page-content">
-          <div class="content-cart">
-
-          </div>
+        <div
+          id="res-nav"
+          class="header-nav flex-column text-center justify-content-center"
+        >
+          <h1
+            onclick="change('Home'); document.getElementById('res-nav').style.display='none';"
+          >
+            Home
+          </h1>
+          <h1 onclick="change('Catalogue'); document.getElementById('res-nav').style.display='none';">
+            Catalogue
+          </h1>
+          <h1 onclick="change('Search'); document.getElementById('res-nav').style.display='none';">
+            Search
+          </h1>
+          <h1 onclick="change('Cart'); document.getElementById('res-nav').style.display='none';">
+            Cart
+          </h1>
+          <h1 onclick="document.getElementById('res-nav').style.display='none';">
+            &times;
+          </h1>
         </div>
+        <div id="page-content"></div>
         <div id="footer"></div>
       </div>
     </div>

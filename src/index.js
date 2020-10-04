@@ -5,6 +5,7 @@ import { Home } from './components/pages/Home.js';
 import { Catalogue } from './components/pages/Catalogue.js';
 import { Checkout } from './components/pages/Checkout.js';
 import { Search, SearchQuery } from './components/pages/Search.js';
+import { CartManager } from './components/CartManager.js';
 
 const render = (template, node) => {
   if (!node) return;
@@ -15,6 +16,7 @@ const render = (template, node) => {
   node.dispatchEvent(event);
   return node;
 };
+
 
 class App extends HTMLElement {
   constructor() {
@@ -32,8 +34,8 @@ class App extends HTMLElement {
 
   connectedCallback() {
     this.renderBasicElements();
-    if (window.location.hash === '#home' || window.location.hash === '') {
-      // if (window.location.hash === '#home') {
+    // if (window.location.hash === '#home' || window.location.hash === '') {
+    if (window.location.hash === '#home') {
       this.state.currentPage = 'home';
     } else if (window.location.hash === '#catalogue') {
       this.state.currentPage = 'catalogue';
@@ -65,6 +67,7 @@ class App extends HTMLElement {
         .getElementById(`${this.state.currentPage}`)
         .classList.add('active');
     } else if (this.state.currentPage === 'checkout') {
+      CartManager;
       window.history.pushState({}, 'checkout', '#checkout');
       document.title = 'Checkout | Semicolon';
       render(Checkout, document.querySelector('#page-content'));
@@ -73,6 +76,7 @@ class App extends HTMLElement {
         .classList.add('active');
     }
 
+    window.CartManager = CartManager;
     window.addtocart = (props) => {
       console.log(props);
       eval(`if(this.state.${props}) {
@@ -80,7 +84,15 @@ class App extends HTMLElement {
         } else { this.state.${props} = 1 }`);
       console.log(this.state);
     };
-    
+
+    window.change = (props)  => {
+      console.log(props)
+      window.history.pushState({}, `${props.toLowerCase()}`, `#${props.toLowerCase()}`);
+      document.title = `${props} | Semicolon`;
+      this.state.currentPage = `${props.toLowerCase()}`;
+      render(props, document.querySelector('#page-content'))
+      };
+
     window.SearchQuery = SearchQuery;
 
     window.Router = (props) => {

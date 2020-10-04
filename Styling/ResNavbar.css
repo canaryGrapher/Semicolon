@@ -1,0 +1,12 @@
+.header-nav {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      z-index: 300;
+      color: blanchedalmond;
+}
+
+.header-nav > h1 {
+      margin: 10px auto;
+}
