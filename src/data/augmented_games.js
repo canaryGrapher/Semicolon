@@ -1,50 +1,50 @@
 export const augmentedData = [
   {
-    name: 'Quake',
-    cost: '0.9',
+    name: 'The Knight',
+    cost: '4',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://pmcvariety.files.wordpress.com/2019/02/super-bowl-knight.jpg',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'Danger has fallen upon Acropolis and The Knight must save all.'
   },
   {
-    name: 'fasfcg',
-    cost: '1.9',
+    name: 'D-Day',
+    cost: '2.5',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://apicms.thestar.com.my/uploads/images/2020/07/15/758160.jpg',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'D-Day is an augmented reality game with zombies trying to bring humanity to an end.'
   },
   {
-    name: 'SdsGzsdg',
-    cost: '0.9',
+    name: 'Kyoryu',
+    cost: '3',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://thetelltalemind.files.wordpress.com/2015/12/one-million-years-b-c-30.jpg?w=829',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'Kyoryu is a Japanese augmented reality game with mystical dinosaurs hell bend on destruction and you must save the world.'
   },
   {
-    name: 'sdzgfdhgag',
+    name: 'Deep Sea',
     cost: '0.9',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://imengine.prod.srp.navigacloud.com/?uuid=F8EEC71D-EA47-4B9D-83AA-C7585CCC7EC8&type=primary&q=72&width=1024',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'The secrets of underwater world cant contain themselves anymore, play to discover them.'
   },
   {
-    name: 'gaszsgvs',
-    cost: '0.9',
+    name: 'Gangsters of Vegas',
+    cost: '4.9',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://i.pinimg.com/originals/c4/e8/d6/c4e8d65ccebfd8cef0e3a6df91d0b1b5.jpg',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'Five years ago Carl Johnson escaped from the pressures of life in Las Vegas... a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers.'
   },
   {
-    name: 'vsrszdgdg',
-    cost: '0.9',
+    name: 'Old Town',
+    cost: '2.0',
     image:
-      'https://data3.origin.com/asset/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_battlefield1.jpg/27051ac9-d3c0-49e3-9979-3dc1058a69f5/original.jpg',
+      'https://i.ytimg.com/vi/uRIaCTEjTm4/hqdefault.jpg',
     about:
-      'lorem ipsum doloanfk jhdsfjh bjs hlaslf halkSG GJHagfg kjHsz zg kjdgszdgjhsz shg lzsjgjhsg kjsj gsgZGZDSgdszlvb sVZ ss HSFk dfzb'
+      'The cowboys of Dallas must save their vity from drugs and bandits.'
   }
 ];
