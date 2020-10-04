@@ -11,7 +11,6 @@ const Cart = () => {
             </div>
           </div>
           <div class="w-full print-button-holder">
-            <p class="total-cost-purchase">Total: &#x20BF;20</p>
             <button class="btn print-button">Pay Now</button>
           </div>`;
   return checkoutTemplate;

@@ -6,6 +6,7 @@ import { Catalogue } from './components/pages/Catalogue.js';
 import { Cart } from './components/pages/Cart.js';
 import { Search, SearchQuery } from './components/pages/Search.js';
 import { CartManager } from './components/CartManager.js';
+import { gameCatalogue } from './data/game_catalogue.js';
 
 const render = (template, node) => {
   if (!node) return;
@@ -34,13 +35,6 @@ class App extends HTMLElement {
 
   connectedCallback() {
     this.renderBasicElements();
-        if (window.location.hash === '#cart') {
-          console.log('this');
-          console.log(this.state.data.length);
-          // const cartItems = this.state.map((item) => {
-          //   console.log(item);
-          // });;
-        }
     // if (window.location.hash === '#home' || window.location.hash === '') {
     if (window.location.hash === '#home') {
       this.state.currentPage = 'home';
@@ -85,10 +79,10 @@ class App extends HTMLElement {
 
     window.CartManager = CartManager;
     window.addtocart = (props) => {
-      console.log(this.state.data);
       eval(`if(this.state.data.${props}) {
         this.state.data.${props} += 1
         } else { this.state.data.${props} = 1 }`);
+      console.log(this.state.data);
     };
 
     window.change = (props) => {
@@ -109,6 +103,54 @@ class App extends HTMLElement {
       window.history.pushState({}, props, `#${props}`);
       this.connectedCallback();
     };
+        
+        if (window.location.hash === '#cart') {
+          for (let item in this.state.data) {
+            for (let i = 0; i < gameCatalogue.length; i++) {
+              if (
+                item ==
+                gameCatalogue[i].name
+                  .split(' ')
+                  .join()
+                  .replace(/[^a-zA-Z ]/g, '')
+              ) {
+                let x = eval(
+                  `Number(gameCatalogue[i].cost)*this.state.data.${item}`
+                );
+                let quantity = eval(`this.state.data.${item}`);
+                console.log(x);
+                // console.log(gameCatalogue[i].cost);
+                // eval(`console.log(this.state.data.${item})`);
+                let cartColumn = `<div class="cart-content d-flex flex-column">
+                <h1 class="cart-heading">${gameCatalogue[i].name}</h1>
+                <div class="w-30">
+                  <img src=${gameCatalogue[i].image} />
+                </div>
+                <div class="w-40 d-flex flex-column justify-content-center">
+                  <table>
+                    <tr>
+                      <td class="text-bold">Quantity:</td>
+                      <td class="text-left">${quantity}</td>
+                    </tr>
+                    <tr>
+                      <td class="text-bold">Cost:</td>
+                      <td class="text-left">&#x20BF;${gameCatalogue[i].cost}</td>
+                    </tr>
+                  </table>
+                </div>
+                <div
+                  class="w-30 d-flex flex-column justify-content-center text-center total"
+                >
+                  <h2>Total:<span class="cost"> &#x20BF;${x}</span></h2>
+                </div>
+              </div>`;
+                document.getElementById(
+                  'container-cart'
+                ).innerHTML += cartColumn;
+              }
+            }
+          }
+        }
   }
 }
 window.customElements.define('nav-bar', App);
