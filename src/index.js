@@ -90,7 +90,9 @@ class App extends HTMLElement {
       window.history.pushState({}, `${props.toLowerCase()}`, `#${props.toLowerCase()}`);
       document.title = `${props} | Semicolon`;
       this.state.currentPage = `${props.toLowerCase()}`;
+      console.log(this.state);
       render(props, document.querySelector('#page-content'))
+      this.connectedCallback();
       };
 
     window.SearchQuery = SearchQuery;
