@@ -46,6 +46,14 @@ img.row-img {
 }
 
 /* defining displays */
+.d-grid {
+  display: grid;
+}
+
+.grid-item-3 {
+  grid-template-columns: auto auto auto;
+}
+
 .d-flex {
   display: flex;
 }
@@ -296,5 +304,9 @@ img.row-img {
 
   .row {
     padding: 12px;
+  }
+
+  .grid-item-3 {
+    grid-template-columns: auto;
   }
 }

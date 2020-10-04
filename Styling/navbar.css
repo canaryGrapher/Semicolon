@@ -4,6 +4,7 @@
   width: 96.4vw;
   height: 8vh;
   line-height: 8vh;
+  z-index: 200;
 }
 
 .logo-text {
@@ -34,5 +35,9 @@
 @media only screen and (max-width: 768px) {
   .ham-menu-container {
     display: inline;
+  }
+  .navbar {
+    width: 100vw;
+    height: 8vh;
   }
 }

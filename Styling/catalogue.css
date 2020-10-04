@@ -1,0 +1,117 @@
+#section-catalogue-landing {
+  height: 100vh;
+  width: 96.4vw;
+  background-image: url('../Resources/Images/catalogue.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.text-over {
+  height: 100vh;
+  padding-left: 4vw;
+}
+
+#root {
+  width: 100vw;
+}
+
+#content {
+  background-image: linear-gradient(to bottom, #1c2838, #172a42);
+}
+
+#cards-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2.7rem;
+  padding-right: 1rem;
+}
+
+.ad-image {
+      width: 600px;
+      height: 450px;
+      margin: 10px auto;
+}
+
+.virtual-reality,
+.augmented-reality,
+.physical-reality {
+  margin: 80px auto;
+}
+
+.game-heading {
+  font-size: 2.7rem;
+  color: #ffffff;
+}
+
+.game-description {
+  font-size: 1.1rem;
+  color: #c2c2c2;
+}
+
+.virtual-card {
+  background-color: #004b6b;
+}
+
+.augmented-card {
+      background-color: #BEB92D;
+}
+
+.hyperreality-card {
+      background-color: #BE2D45;
+}
+
+.game-card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 20px;
+  color: #ffffff;
+}
+
+.game-name-bar {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 20px 20px 0 0;
+}
+
+.game-card-footer {
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.game-card-body {
+  padding: 20px 5px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #c2c2c2;
+}
+
+.add-to-cart {
+  width: 70%;
+}
+
+.cart-image {
+  text-align: center;
+}
+.item-cost {
+  background-color: #e4e4e4;
+  text-align: center;
+  color: #004b6b;
+  width: 30%;
+}
+
+.game-card-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #section-catalogue-landing {
+    width: 100vw;
+  }
+}
