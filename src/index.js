@@ -32,8 +32,8 @@ class App extends HTMLElement {
 
   connectedCallback() {
     this.renderBasicElements();
-    // if (window.location.hash === '#home' || window.location.hash === '') {
-    if (window.location.hash === '#home') {
+    if (window.location.hash === '#home' || window.location.hash === '') {
+      // if (window.location.hash === '#home') {
       this.state.currentPage = 'home';
     } else if (window.location.hash === '#catalogue') {
       this.state.currentPage = 'catalogue';
