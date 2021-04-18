@@ -3,7 +3,7 @@ export const gameCatalogue = [
     name: 'The Knight',
     cost: '4',
     image:
-      'https://pmcvariety.files.wordpress.com/2019/02/super-bowl-knight.jpg',
+      'https://static5.depositphotos.com/1000949/520/i/600/depositphotos_5206764-stock-photo-medieval-knight.jpg',
     about: 'Danger has fallen upon Acropolis and The Knight must save all.'
   },
   {
