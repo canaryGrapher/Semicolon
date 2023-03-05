@@ -8,7 +8,7 @@ const Home = () => {
                 DON'T PLAY THE GAME, <br />BE THE GAME
               </h1>
               <p class="subtext-root">
-                Fight with the resistance on Earth, with the<br />
+                Fight for the resistance on Earth, with the<br />
                 amazing Framework Simulation
               </p>
               <button class="btn" onClick="Router('catalogue')">Explore</button>
