@@ -5,7 +5,7 @@ const Home = () => {
             <div class="text-over d-flex flex-column justify-content-center">
               <h2 class="text-root">5D IMMERSIVE GAMING</h2>
               <h1 class="heading-root">
-                DON'T PLAY THE GAME, <br />BE THE GAME
+                DON'T PLAY THE GAME, <br />EXPERIENCE IT
               </h1>
               <p class="subtext-root">
                 Fight for the resistance on Earth, with the<br />
